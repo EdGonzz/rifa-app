@@ -10,5 +10,11 @@
   },
   "devDependencies": {
     "tailwindcss-content-visibility": "^1.0.2"
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
 }
