@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-100: #d4eaf7;
+  --color-primary-200: #b6ccd8;
+  --color-primary-300: #3b3c3d;
+  --color-accent-100: #71c4ef;
+  --color-accent-200: #00668c;
+  --color-text-100: #1d1c1c;
+  --color-text-200: #313d44;
+  --color-bg-100: #fffefb;
+  --color-bg-200: #f5f4f1;
+  --color-bg-300: #cccbc8;
+}
+
+@plugin 'tailwindcss-content-visibility';
+
+.buttonNumber {
+  @apply border-[1px] w-[76px] h-10 border-black rounded-full px-2 py-1 text-center text-black text-sm font-semibold;
+}
+
+.gift-item {
+  @apply text-black text-xl font-semibold flex items-center gap-2;
+}

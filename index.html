@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Rifa</title>
+  <link rel="stylesheet" href="./public/css/style.css">
+  <script src="./src/js/main.js" defer></script>
+</head>
+
+<body class="bg-gradient-to-b from-primary-100 to-bg-200">
+
+  <header class="text-center py-6 space-y-2">
+    <h1 class="text-5xl md:text-7xl tracking-wide font-bold">SUPER</h1>
+    <p class="text-3xl md:text-5xl font-serif italic">Rifa</p>
+    <p class="text-xl mb-8">Participa y gana increíbles premios</p>
+
+    <div class="flex items-center justify-evenly gap-6">
+      <span class="flex items-center gap-1.5 text-lg font-medium">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" aria-hidden="true">
+          <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M10 2h4m-2 12 3-3" />
+            <circle cx="12" cy="14" r="8" />
+          </g>
+        </svg>
+        Sorteo Próximo
+      </span>
+      <span class="text-lg font-medium">
+        Valor: 45Bs
+      </span>
+    </div>
+  </header>
+
+  <main class="flex flex-col p-4 gap-y-4 mb-62">
+    <section id="prizes" class="grid grid-cols-5 gap-y-4 text-center">
+
+      <div class="col-span-5 bg-bg-100 rounded-xl p-6 flex flex-col gap-y-6">
+        <header class="flex items-center justify-center gap-2">
+          <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M7 21v-2h4v-3.1q-1.225-.275-2.187-1.037T7.4 12.95q-1.875-.225-3.137-1.637T3 8V5h4V3h10v2h4v3q0 1.9-1.263 3.313T16.6 12.95q-.45 1.15-1.412 1.913T13 15.9V19h4v2zm0-10.2V7H5v1q0 .95.55 1.713T7 10.8m5 3.2q1.25 0 2.125-.875T15 11V5H9v6q0 1.25.875 2.125T12 14m5-3.2q.9-.325 1.45-1.088T19 8V7h-2zm-5-1.3" />
+          </svg>
+          <h2 class="text-2xl font-bold">Premio 1</h2>
+        </header>
+        <picture class="grid grid-cols-3 gap-4">
+          <img class="h-52 w-full col-span-1 object-cover" srcset="./public/assets/images/refrigerator.webp"
+            type="image/webp">
+          <img class="h-52 w-full col-span-2 object-cover" srcset="./public/assets/images/microwave.webp"
+            type="image/webp">
+          <img class="h-52 w-full col-span-3 object-cover" srcset="./public/assets/images/kitchen.webp"
+            type="image/webp">
+        </picture>
+        <ul class="flex flex-col gap-2">
+          <li class="gift-item">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M20 7h-1.209A5 5 0 0 0 19 5.5C19 3.57 17.43 2 15.5 2c-1.622 0-2.705 1.482-3.404 3.085C11.407 3.57 10.269 2 8.5 2 6.57 2 5 3.57 5 5.5c0 .596.079 1.089.209 1.5H4c-1.103 0-2 .897-2 2v2c0 1.103.897 2 2 2v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2m-4.5-3c.827 0 1.5.673 1.5 1.5C17 7 16.374 7 16 7h-2.478c.511-1.576 1.253-3 1.978-3M7 5.5C7 4.673 7.673 4 8.5 4c.888 0 1.714 1.525 2.198 3H8c-.374 0-1 0-1-1.5M4 9h7v2H4zm2 11v-7h5v7zm12 0h-5v-7h5zm-5-9V9.085L13.017 9H20l.001 2z" />
+            </svg>
+            Refrigerador 230Lts
+          </li>
+          <li class="gift-item">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M20 7h-1.209A5 5 0 0 0 19 5.5C19 3.57 17.43 2 15.5 2c-1.622 0-2.705 1.482-3.404 3.085C11.407 3.57 10.269 2 8.5 2 6.57 2 5 3.57 5 5.5c0 .596.079 1.089.209 1.5H4c-1.103 0-2 .897-2 2v2c0 1.103.897 2 2 2v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2m-4.5-3c.827 0 1.5.673 1.5 1.5C17 7 16.374 7 16 7h-2.478c.511-1.576 1.253-3 1.978-3M7 5.5C7 4.673 7.673 4 8.5 4c.888 0 1.714 1.525 2.198 3H8c-.374 0-1 0-1-1.5M4 9h7v2H4zm2 11v-7h5v7zm12 0h-5v-7h5zm-5-9V9.085L13.017 9H20l.001 2z" />
+            </svg>
+            Cocina de 5 Hornillas
+          </li>
+          <li class="gift-item">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M20 7h-1.209A5 5 0 0 0 19 5.5C19 3.57 17.43 2 15.5 2c-1.622 0-2.705 1.482-3.404 3.085C11.407 3.57 10.269 2 8.5 2 6.57 2 5 3.57 5 5.5c0 .596.079 1.089.209 1.5H4c-1.103 0-2 .897-2 2v2c0 1.103.897 2 2 2v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2m-4.5-3c.827 0 1.5.673 1.5 1.5C17 7 16.374 7 16 7h-2.478c.511-1.576 1.253-3 1.978-3M7 5.5C7 4.673 7.673 4 8.5 4c.888 0 1.714 1.525 2.198 3H8c-.374 0-1 0-1-1.5M4 9h7v2H4zm2 11v-7h5v7zm12 0h-5v-7h5zm-5-9V9.085L13.017 9H20l.001 2z" />
+            </svg>
+            Microondas 20Lts
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-span-5 bg-bg-100 rounded-xl p-6 flex flex-col gap-y-6">
+        <header class="flex items-center justify-center gap-2">
+          <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M7 21v-2h4v-3.1q-1.225-.275-2.187-1.037T7.4 12.95q-1.875-.225-3.137-1.637T3 8V5h4V3h10v2h4v3q0 1.9-1.263 3.313T16.6 12.95q-.45 1.15-1.412 1.913T13 15.9V19h4v2zm0-10.2V7H5v1q0 .95.55 1.713T7 10.8m5 3.2q1.25 0 2.125-.875T15 11V5H9v6q0 1.25.875 2.125T12 14m5-3.2q.9-.325 1.45-1.088T19 8V7h-2zm-5-1.3" />
+          </svg>
+          <h2 class="text-2xl font-bold">Premio 2</h2>
+        </header>
+        <picture>
+          <img class="h-52 w-full col-span-1 object-cover" srcset="./public/assets/images/air-conditioning.webp"
+            type="image/webp">
+        </picture>
+        <ul class="flex flex-col gap-2">
+          <li class="gift-item">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M20 7h-1.209A5 5 0 0 0 19 5.5C19 3.57 17.43 2 15.5 2c-1.622 0-2.705 1.482-3.404 3.085C11.407 3.57 10.269 2 8.5 2 6.57 2 5 3.57 5 5.5c0 .596.079 1.089.209 1.5H4c-1.103 0-2 .897-2 2v2c0 1.103.897 2 2 2v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2m-4.5-3c.827 0 1.5.673 1.5 1.5C17 7 16.374 7 16 7h-2.478c.511-1.576 1.253-3 1.978-3M7 5.5C7 4.673 7.673 4 8.5 4c.888 0 1.714 1.525 2.198 3H8c-.374 0-1 0-1-1.5M4 9h7v2H4zm2 11v-7h5v7zm12 0h-5v-7h5zm-5-9V9.085L13.017 9H20l.001 2z" />
+            </svg>
+            Aire Split Inverter 12000Btu
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-span-5 bg-bg-100 rounded-xl p-6 flex flex-col gap-y-6">
+        <header class="flex items-center justify-center gap-2">
+          <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M7 21v-2h4v-3.1q-1.225-.275-2.187-1.037T7.4 12.95q-1.875-.225-3.137-1.637T3 8V5h4V3h10v2h4v3q0 1.9-1.263 3.313T16.6 12.95q-.45 1.15-1.412 1.913T13 15.9V19h4v2zm0-10.2V7H5v1q0 .95.55 1.713T7 10.8m5 3.2q1.25 0 2.125-.875T15 11V5H9v6q0 1.25.875 2.125T12 14m5-3.2q.9-.325 1.45-1.088T19 8V7h-2zm-5-1.3" />
+          </svg>
+          <h2 class="text-2xl font-bold">Premio 3</h2>
+        </header>
+        <picture>
+          <img class="h-52 w-full col-span-1 object-cover" srcset="./public/assets/images/washing-machine.webp"
+            type="image/webp">
+        </picture>
+        <ul class="flex flex-col gap-2">
+          <li class="gift-item">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M20 7h-1.209A5 5 0 0 0 19 5.5C19 3.57 17.43 2 15.5 2c-1.622 0-2.705 1.482-3.404 3.085C11.407 3.57 10.269 2 8.5 2 6.57 2 5 3.57 5 5.5c0 .596.079 1.089.209 1.5H4c-1.103 0-2 .897-2 2v2c0 1.103.897 2 2 2v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2m-4.5-3c.827 0 1.5.673 1.5 1.5C17 7 16.374 7 16 7h-2.478c.511-1.576 1.253-3 1.978-3M7 5.5C7 4.673 7.673 4 8.5 4c.888 0 1.714 1.525 2.198 3H8c-.374 0-1 0-1-1.5M4 9h7v2H4zm2 11v-7h5v7zm12 0h-5v-7h5zm-5-9V9.085L13.017 9H20l.001 2z" />
+            </svg>
+            Lavadora Doble tina 12Kg
+          </li>
+        </ul>
+      </div>
+
+
+    </section>
+
+    <section class="bg-bg-100 rounded-xl p-6 flex flex-col gap-y-6">
+      <h2 class="text-2xl font-bold">¿Cómo funciona?</h2>
+      <ul class="flex flex-col gap-2 list-decimal list-inside">
+        <li class="text-lg font-semibold">Selecciona los números de tus tickets</li>
+        <li class="text-lg font-semibold">Completa el formulario de contacto para validar el pago</li>
+        <li class="text-lg font-semibold">Recibirás un WhatsApp con los números de tus tickets</li>
+        <li class="text-lg font-semibold">Esperar a la fecha de pautada para el sorteo</li>
+      </ul>
+    </section>
+
+    <section id="section-search" class="bg-bg-100 rounded-xl p-6 flex flex-col gap-y-4">
+      <input id="search-input" type="text" class="w-full p-2 border-2 border-black rounded-xl"
+        placeholder="Buscar por número...">
+    </section>
+
+    <section id="container-numbers"
+      class="h-[500px] grid grid-cols-3 gap-4 bg-bg-100 rounded-xl p-6 overflow-auto content-visibility-auto ">
+
+    </section>
+
+    <section id="section-form" class="bg-bg-100 rounded-lg border shadow-sm backdrop-blur-xl border-none p-6 space-y-4">
+      <h3 class="text-center text-2xl font-semibold leading-none tracking-tight">Formulario de contacto</h3>
+      <form id="form-contact" class="flex flex-col gap-y-4" action="">
+        <div>
+          <label for="name">Nombre Completo</label>
+          <input
+            class="flex h-10 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-white/5"
+            type="text" id="name" name="name" placeholder="Nombre Completo">
+        </div>
+        <div>
+          <label for="numero">Numero de Teléfono</label>
+          <input
+            class="flex h-10 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-white/5"
+            type="text" id="numero" name="numero" placeholder="Numero de Teléfono">
+        </div>
+        <div>
+          <label for="direction">Direction</label>
+          <textarea name="direction" id="direction" rows="4"
+            class="w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-white/5"></textarea>
+        </div>
+        <div class="flex flex-col gap-y-4">
+          <label for="numberSelected">Número Seleccionado</label>
+          <div id="numberSelected" class="grid grid-cols-3 gap-4">
+
+          </div>
+        </div>
+        <button
+          class="flex h-10 w-full items-center justify-center rounded-md border border-transparent px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-primary-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-primary-300"
+          type="submit">Enviar
+        </button>
+      </form>
+    </section>
+  </main>
+
+</body>
+
+</html>
