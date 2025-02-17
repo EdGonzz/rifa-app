@@ -87,7 +87,7 @@ function sendFormData(values) {
   });
 
 
-  window.open(`https://wa.me/584126834701?text=*Nombre:* ${data.name}%0a*Teléfono:* ${data.numero}%0a*Dirección:* ${data.direction}%0a*Números Seleccionados:* ${arrayNumbersSelected.join(', ')}`, "_blank");
+  window.open(`https://wa.me/584126839088?text=*Nombre:* ${data.name}%0a*Teléfono:* ${data.numero}%0a*Dirección:* ${data.direction}%0a*Números Seleccionados:* ${arrayNumbersSelected.join(', ')}`, "_blank");
 }
 
 $searchInput.addEventListener("input", (e) => {
