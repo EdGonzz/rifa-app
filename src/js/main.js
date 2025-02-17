@@ -51,7 +51,7 @@ function verifyNumberSold() {
 
   for (let i = 0; i < arrayNumbersSold.length; i++) {
     if (arrayNumbers.includes(arrayNumbersSold[i])) {
-      arrayNumbers.splice(arrayNumbersSold[i], 1);
+      arrayNumbers.splice(arrayNumbers.indexOf(arrayNumbersSold[i]), 1);
     }
   }
 
