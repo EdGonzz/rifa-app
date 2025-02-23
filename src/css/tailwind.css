@@ -1,16 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-100: #d4eaf7;
-  --color-primary-200: #b6ccd8;
-  --color-primary-300: #3b3c3d;
-  --color-accent-100: #71c4ef;
-  --color-accent-200: #00668c;
-  --color-text-100: #1d1c1c;
-  --color-text-200: #313d44;
-  --color-bg-100: #fffefb;
-  --color-bg-200: #f5f4f1;
-  --color-bg-300: #cccbc8;
+  --color-primary-100: #0049af;
+  --color-accent-100: #d7ff25;
+  --color-bg-100: #afd3ff;
+  --color-bg-200: #f8ffff;
+  --color-bg-300: #c2c2c2;
 }
 
 @plugin 'tailwindcss-content-visibility';
