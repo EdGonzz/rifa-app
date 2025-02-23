@@ -45,7 +45,7 @@
   <link rel="manifest" href="./public/assets/favicon/site.webmanifest" />
 </head>
 
-<body class="bg-gradient-to-b from-primary-100 to-bg-200">
+<body class="bg-gradient-to-b from-bg-100 to-bg-200">
 
   <header class="text-center py-6 space-y-2">
     <h1 class="text-5xl md:text-7xl tracking-wide font-bold">SUPER</h1>
@@ -72,7 +72,7 @@
   <main class="flex flex-col p-4 gap-y-4 mb-6">
     <section id="prizes" class="grid grid-cols-5 gap-y-4 text-center">
 
-      <div class="col-span-5 bg-bg-100 rounded-xl p-6 flex flex-col gap-y-6">
+      <div class="col-span-5 bg-bg-200 rounded-xl p-6 flex flex-col gap-y-8">
         <header class="flex items-center justify-center gap-2">
           <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path
@@ -80,12 +80,8 @@
           </svg>
           <h2 class="text-2xl font-bold">Premio 1</h2>
         </header>
-        <picture class="grid grid-cols-3 gap-4">
-          <img class="h-52 w-full col-span-1 object-cover" srcset="./public/assets/images/refrigerator.webp"
-            type="image/webp">
-          <img class="h-52 w-full col-span-2 object-cover" srcset="./public/assets/images/microwave.webp"
-            type="image/webp">
-          <img class="h-52 w-full col-span-3 object-cover" srcset="./public/assets/images/kitchen.webp"
+        <picture class="content-center">
+          <img class="h-60 w-full col-span-1 object-cover m-auto" srcset="./public/assets/images/prize1.webp"
             type="image/webp">
         </picture>
         <ul class="flex flex-col gap-2">
@@ -113,7 +109,7 @@
         </ul>
       </div>
 
-      <div class="col-span-5 bg-bg-100 rounded-xl p-6 flex flex-col gap-y-6">
+      <div class="col-span-5 bg-bg-200 rounded-xl p-6 flex flex-col gap-y-6">
         <header class="flex items-center justify-center gap-2">
           <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path
@@ -136,7 +132,7 @@
         </ul>
       </div>
 
-      <div class="col-span-5 bg-bg-100 rounded-xl p-6 flex flex-col gap-y-6">
+      <div class="col-span-5 bg-bg-200 rounded-xl p-6 flex flex-col gap-y-6">
         <header class="flex items-center justify-center gap-2">
           <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path
@@ -159,30 +155,46 @@
         </ul>
       </div>
 
-
     </section>
 
-    <section class="bg-bg-100 rounded-xl p-6 flex flex-col gap-y-6">
+    <section class="bg-bg-200 rounded-xl p-6 flex flex-col gap-y-6">
       <h2 class="text-2xl font-bold">¿Cómo funciona?</h2>
       <ul class="flex flex-col gap-2 list-decimal list-inside">
         <li class="text-lg font-semibold">Selecciona los números de tus tickets</li>
         <li class="text-lg font-semibold">Completa el formulario de contacto</li>
-        <li class="text-lg font-semibold">Seras dirigido a WhatsApp donde podremos valedar los pagos y sera entregado tus tickets</li>
+        <li class="text-lg font-semibold">Seras dirigido a WhatsApp donde podremos valedar los pagos y sera entregado
+          tus tickets</li>
         <li class="text-lg font-semibold">Esperar a la fecha de pautada para el sorteo</li>
       </ul>
     </section>
 
-    <section id="section-search" class="bg-bg-100 rounded-xl p-6 flex flex-col gap-y-4">
+    <section id="progress-bar-container" class="bg-bg-200 rounded-xl p-6 flex flex-col gap-y-4">
+      <div class="text-center">
+        <p>Porcentaje de números vendidos: <span id="percentage-sold">0</span>%</p>
+      </div>
+
+      <div class="w-full h-2.5 rounded-full bg-gray-300">
+        <div id="progress-bar" class="w-full h-2.5 bg-primary-100 rounded-tl-full rounded-bl-full">
+        </div>
+      </div>
+
+      <div class="text-center">
+        <p><span id="numberSold"></span> números vendidos de <span id="numberTotal"></span>
+        </p>
+      </div>
+    </section>
+
+    <section id="section-search" class="bg-bg-200 rounded-xl p-6 flex flex-col gap-y-4">
       <input id="search-input" type="text" class="w-full p-2 border-2 border-black rounded-xl"
         placeholder="Buscar por número...">
     </section>
 
     <section id="container-numbers"
-      class="h-[500px] grid grid-cols-3 auto-rows-min gap-4 place-items-center bg-bg-100 rounded-xl p-6 overflow-auto content-visibility-auto ">
+      class="h-[500px] grid grid-cols-3 auto-rows-min gap-4 place-items-center bg-bg-200 rounded-xl p-6 overflow-auto content-visibility-auto ">
 
     </section>
 
-    <section id="section-form" class="bg-bg-100 rounded-lg border shadow-sm backdrop-blur-xl border-none p-6 space-y-4">
+    <section id="section-form" class="bg-bg-200 rounded-lg border shadow-sm backdrop-blur-xl border-none p-6 space-y-4">
       <h3 class="text-center text-2xl font-semibold leading-none tracking-tight">Formulario de contacto</h3>
       <form id="form-contact" class="flex flex-col gap-y-4" action="">
         <div>
@@ -209,8 +221,8 @@
           </div>
         </div>
         <button
-          class="flex h-10 w-full items-center justify-center rounded-md border border-transparent px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-primary-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-primary-300"
-          type="submit">Enviar
+          class="flex h-10 w-full items-center justify-center rounded-md border border-transparent px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-primary-100/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-bg-300"
+          type="submit">Enviar por WhatsApp
         </button>
       </form>
     </section>
