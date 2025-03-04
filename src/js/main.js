@@ -25,6 +25,7 @@ function printNumbers() {
   })
 }
 
+//change $button to arrayNumbers
 function findNumber(value) {
   const $button = document.getElementById(`button-${value}`);
 
@@ -101,6 +102,7 @@ function updateProgressBar() {
   $numberTotal.innerText = arrayNumbers.length;
 }
 
+//change the form to send the params value
 $searchInput.addEventListener("input", (e) => {
   const value = e.target.value;
 
